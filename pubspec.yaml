@@ -1,0 +1,41 @@
+name: listener_demo
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  logger: any
+  path_provider: ^2.1.5
+  record: ^5.2.0
+  typed_monad: ^0.0.5
+  http: ^1.2.2
+  country_flags: ^3.0.0
+  country_picker: ^2.0.27
+  shared_preferences: ^2.3.3
+  chat_bubbles: ^1.6.0
+  equatable: ^2.0.7
+  flutter_dotenv: ^5.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Geist
+      fonts:
+        - asset: fonts/Geist-Regular.ttf
+        - asset: fonts/Geist-Bold.ttf
+          weight: 700
+    - family: NotoSans
+      fonts:
+        - asset: fonts/NotoSans-Regular.ttf
+  assets:
+    - .env
