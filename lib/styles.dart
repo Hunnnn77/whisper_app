@@ -35,7 +35,3 @@ abstract mixin class DefaultTheme {
         ),
       );
 }
-// final class DefaultTheme {
-//   const DefaultTheme();
-
-// }

@@ -174,10 +174,12 @@ class _SuccessState extends State<_Success> {
                   if (o.$1 == Side.from)
                     Row(
                       children: [
-                        BubbleSpecialThree(
-                          text: o.$2,
-                          tail: false,
-                          color: const Color(0xFFE8E8EE),
+                        SelectionArea(
+                          child: BubbleSpecialThree(
+                            text: o.$2,
+                            tail: false,
+                            color: const Color(0xFFE8E8EE),
+                          ),
                         ),
                         // Spacer(),
                       ],
@@ -187,10 +189,12 @@ class _SuccessState extends State<_Success> {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         // Spacer(),
-                        BubbleSpecialThree(
-                          text: o.$2,
-                          tail: false,
-                          color: const Color(0xFF1B97F3),
+                        SelectionArea(
+                          child: BubbleSpecialThree(
+                            text: o.$2,
+                            tail: false,
+                            color: const Color(0xFF1B97F3),
+                          ),
                         ),
                       ],
                     ),
@@ -206,7 +210,6 @@ class _SuccessState extends State<_Success> {
 class _Initial extends StatelessWidget {
   const _Initial({
     required this.provider,
-    super.key,
   });
 
   final StateProvider provider;
@@ -252,9 +255,9 @@ class _Initial extends StatelessWidget {
                     TextSpan(text: 'll settings have been completed'),
                   ],
                 ),
-              )
+              ),
             ],
-          )
+          ),
       ],
     );
   }
